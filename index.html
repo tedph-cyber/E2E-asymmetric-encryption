@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asymmetric Encryption</title>
+</head>
+<body>
+    <h1>Asymmetric Encryption Example</h1>
+    <h2>Encrypt a Message</h2>
+    <form action="/encrypt" method="post">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required>
+        <br>
+        <label for="publicKey">Public Key:</label>
+        <textarea id="publicKey" name="publicKey" rows="5" cols="50" required></textarea>
+        <br>
+        <button type="submit">Encrypt</button>
+    </form>
+
+    <h2>Decrypt a Message</h2>
+    <form action="/decrypt" method="post">
+        <label for="encryptedMessage">Encrypted Message:</label>
+        <textarea id="encryptedMessage" name="encryptedMessage" rows="5" cols="50" required></textarea>
+        <br>
+        <label for="privateKey">Private Key:</label>
+        <textarea id="privateKey" name="privateKey" rows="5" cols="50" required></textarea>
+        <br>
+        <button type="submit">Decrypt</button>
+    </form>
+</body>
+</html>
